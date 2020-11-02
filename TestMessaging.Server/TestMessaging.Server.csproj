@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestMessaging.Common\TestMessaging.Common.csproj" />
+    <ProjectReference Include="..\TestMessaging.DAL\TestMessaging.DAL.csproj" />
+    <ProjectReference Include="..\TestMessaging.RabbitMq\TestMessaging.RabbitMq.csproj" />
+  </ItemGroup>
+
+</Project>
